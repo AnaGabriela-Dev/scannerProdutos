@@ -5,8 +5,8 @@ public class ItemPedido {
 	private int quantidade;
 	private double precoUnitario;
 	
-	public ItemPedido(String nome, double preco, String id, int estoque, String descricao, int quant) {
-		Produto produto = new Produto(id, nome, preco, estoque, descricao); 
+	public ItemPedido(String nome, double preco) {
+		Produto produto = new Produto(nome, preco); 
 		this.produto = produto;
 		this.quantidade = quant;
 	}
@@ -39,3 +39,4 @@ public class ItemPedido {
 		this.precoUnitario = precoUnitario;
 	}
 }
+
