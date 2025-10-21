@@ -7,12 +7,9 @@ public class Produto {
 	protected String id;
 	protected String descricao;
 	
-	public Produto(String id, String nome, double preco, int estoque, String descricao) {
-		this.id = id;
+	public Produto(String nome, double preco) {
 		this.nome = nome;
 		this.preco = preco;
-		this.estoque = estoque;
-		this.descricao = descricao;
 	}
 	
 	public void addEstoque(int valor) {
@@ -54,3 +51,4 @@ public class Produto {
 		this.estoque = estoque;
 	}
 }
+
